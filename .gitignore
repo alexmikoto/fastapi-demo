@@ -1,0 +1,4 @@
+*.db
+.py[cdo]
+__pycache__/
+dist/

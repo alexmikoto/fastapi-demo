@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "demo"
+dynamic = ["version"]
+dependencies = [
+  "fastapi",
+  "sqlalchemy",
+  "python-jose[cryptography]",
+]
+
+[tool.hatch.version]
+path = "demo/__init__.py"

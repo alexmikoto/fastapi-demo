@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="color-scheme" content="light dark"/>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+	<script type="text/javascript" src="app.js"></script>
+	<title>Demo</title>
+</head>
+<body>
+	<main class="container">
+<!--
+		Admin security is out of scope
+		<div id="login-panel">
+			<h2>Login</h2>
+			<form>
+				<input type="text" name="username" placeholder="Username" aria-label="Username" required/>
+				<input type="password" name="password" placeholder="Password" aria-label="Password" required/>
+				<input type="submit" name="submit">
+			</form>
+		</div>
+-->
+
+	<div id="person-crud">
+		<h2>Persons</h2>
+		<table>
+			<thead>
+				<tr>
+					<td>Id</td>
+					<td>Name</td>
+					<td>Email</td>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Would do AJAX here... but out of time -->
+				<template id="person-crud-template">
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</template>
+			</tbody>
+		</table>
+	</div>
+
+	<div id="vehicle-crud">
+		<h2>Vehicle</h2>
+		<table>
+			<thead>
+				<tr>
+					<td>Id</td>
+					<td>License Plate</td>
+					<td>Brand</td>
+					<td>Color</td>
+					<td>Owner</td>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Would do AJAX here... but out of time -->
+				<template id="vehicle-crud-template">
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</template>
+			</tbody>
+		</table>
+	</div>
+
+	<div id="officer-crud">
+		<h2>Officers</h2>
+		<table>
+			<thead>
+				<tr>
+					<td>Id</td>
+					<td>Name</td>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Would do AJAX here... but out of time -->
+				<template id="officer-crud-template">
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+				</template>
+			</tbody>
+		</table>
+	</div>
+
+	</main>
+</body>
